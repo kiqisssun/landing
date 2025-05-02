@@ -1,84 +1,71 @@
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #0f0f0f;
-    color: white;
-    overflow-x: hidden;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('assets/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
 }
 
-.background {
-    background-image: url('assets/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    filter: brightness(0.6);
-}
-
-.content {
-    text-align: center;
-    padding: 60px 20px;
+.main {
+  text-align: center;
+  padding: 40px 20px;
 }
 
 .logo {
-    max-width: 280px;
-    margin-bottom: 20px;
+  width: 280px;
+  margin-bottom: 20px;
 }
 
-.main-heading {
-    font-size: 2.2em;
-    margin: 10px 0 15px;
+.subtitle {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.sub-heading {
-    font-size: 1.5em;
-    margin: 0 0 10px;
+.bonus-block {
+  margin-bottom: 30px;
 }
 
-.cta-button {
-    display: inline-block;
-    margin-bottom: 50px;
-    padding: 14px 28px;
-    font-size: 1.1em;
-    background-color: #ff4747;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: background 0.3s;
+.bonus-text {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.cta-button:hover {
-    background-color: #ff2c2c;
+.bonus-button {
+  background-color: #ff4747;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.bonus-button:hover {
+  background-color: #e03b3b;
 }
 
 .cases {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
 }
 
 .case {
-    width: 200px;
-    text-align: center;
-    transition: transform 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease;
 }
 
 .case img {
-    width: 100%;
-    border-radius: 12px;
-}
-
-.case p {
-    margin-top: 10px;
-    font-size: 1.1em;
+  width: 200px;
+  border-radius: 16px;
 }
 
 .case:hover {
-    transform: scale(1.08);
+  transform: scale(1.05);
 }
