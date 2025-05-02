@@ -60,11 +60,21 @@ body {
   transition: transform 0.3s ease;
   width: 260px;
   text-align: center;
+  cursor: pointer;
+}
+
+.case:hover {
+  transform: scale(1.05);
 }
 
 .case img {
   width: 100%;
   border-radius: 12px 12px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.case:hover img {
+  transform: scale(1.05);
 }
 
 .case-title {
