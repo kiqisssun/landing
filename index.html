@@ -2,33 +2,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KIQISUN - Hellcase Promo</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KIQISUN - Case Opening</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLYLCMCFJM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{ dataLayer.push(arguments); }}
+    gtag('js', new Date());
+    gtag('config', 'G-LLYLCMCFJM');
+  </script>
 </head>
 <body>
-    <div class="background"></div>
-    <div class="content">
-        <img src="assets/logo.png" alt="KIQISUN Logo" class="logo">
-        <h1 class="main-heading">Open cases on the best skin site – Hellcase</h1>
-        <h2 class="sub-heading">🎁 Get $0.7 + 10% on your first deposit using code <strong>KIQISUN</strong></h2>
-        <a href="https://hellca.se/kiqisun" target="_blank" class="cta-button">CLAIM BONUS</a>
+  <div class="banner">
+    <img src="assets/logo.png" alt="KIQISUN Banner" />
+  </div>
 
-        <div class="cases">
-            <a href="https://hellca.se/kiqisun" target="_blank" class="case">
-                <img src="assets/m4-case.png" alt="M4 Case">
-                <p>M4 Case – $5.25</p>
-            </a>
-            <a href="https://hellca.se/kiqisun" target="_blank" class="case">
-                <img src="assets/yellow-case.png" alt="Yellow Case">
-                <p>Yellow Case – $14</p>
-            </a>
-            <a href="https://hellca.se/kiqisun" target="_blank" class="case">
-                <img src="assets/riptide-case.png" alt="Riptide Collections">
-                <p>Riptide Collections – $5.80</p>
-            </a>
-        </div>
+  <div class="title">
+    <h1>Open cases on the best skin site – Hellcase</h1>
+    <p class="bonus-text">🎁 Get $0.7 + 10% on your first deposit using code <strong>KIQISUN</strong></p>
+    <a href="https://hellca.se/kiqisun" target="_blank" class="bonus-button" id="claim-bonus">Claim Bonus</a>
+  </div>
+
+  <div class="cases">
+    <div class="case" id="m4-case">
+      <img src="assets/m4-case.png" alt="M4 Case" />
+      <p class="case-name">M4 Case – $5.25</p>
     </div>
+    <div class="case" id="yellow-case">
+      <img src="assets/yellow-case.png" alt="Yellow Case" />
+      <p class="case-name">Yellow Case – $14</p>
+    </div>
+    <div class="case" id="riptide-case">
+      <img src="assets/riptide-case.png" alt="Riptide Case" />
+      <p class="case-name">Riptide Collections – $5.80</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('claim-bonus').addEventListener('click', function () {
+      gtag('event', 'click_claim_bonus');
+    });
+
+    document.getElementById('m4-case').addEventListener('click', function () {
+      gtag('event', 'click_case_m4');
+      window.open('https://hellca.se/kiqisun', '_blank');
+    });
+
+    document.getElementById('yellow-case').addEventListener('click', function () {
+      gtag('event', 'click_case_yellow');
+      window.open('https://hellca.se/kiqisun', '_blank');
+    });
+
+    document.getElementById('riptide-case').addEventListener('click', function () {
+      gtag('event', 'click_case_riptide');
+      window.open('https://hellca.se/kiqisun', '_blank');
+    });
+  </script>
 </body>
 </html>
