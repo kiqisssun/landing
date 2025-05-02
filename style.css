@@ -8,35 +8,37 @@ body {
 
 .container {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .logo {
-  max-width: 180px;
-  margin-bottom: 20px;
+  max-width: 200px;
+  margin-bottom: 30px;
 }
 
 .headline {
-  font-size: 32px; /* увеличено */
+  font-size: 32px;
   margin: 10px 0 10px;
   font-weight: bold;
 }
 
 .subheadline {
-  font-size: 20px; /* увеличено */
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
 .cta-button {
   background: #ff3c00;
   color: white;
-  padding: 14px 32px; /* немного увеличено */
+  padding: 14px 32px;
   border-radius: 10px;
   text-decoration: none;
-  font-size: 18px; /* увеличено */
+  font-size: 18px;
   font-weight: bold;
   transition: background 0.2s ease;
   box-shadow: 0 0 14px rgba(255, 60, 0, 0.5);
+  display: inline-block;
+  margin-bottom: 40px;
 }
 
 .cta-button:hover {
@@ -48,7 +50,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
-  padding: 60px 20px 40px;
+  padding: 40px 20px 60px;
 }
 
 .case {
@@ -56,7 +58,7 @@ body {
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease;
-  width: 260px; /* увеличено */
+  width: 260px;
   text-align: center;
 }
 
@@ -67,7 +69,7 @@ body {
 
 .case-title {
   padding: 14px;
-  font-size: 18px; /* увеличено */
+  font-size: 18px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
