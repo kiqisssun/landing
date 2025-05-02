@@ -1,50 +1,49 @@
 
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('assets/bg.jpg');
+  background: url('assets/bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   color: white;
 }
 
-.container {
+.main {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .logo {
-  width: 100%;
-  max-width: 800px;
+  width: 280px;
   margin-bottom: 20px;
 }
 
-.tagline {
-  font-size: 28px;
-  margin-bottom: 10px;
+.subtitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.bonus-block {
+  margin-bottom: 30px;
 }
 
 .bonus-text {
-  font-size: 20px;
-  margin: 10px 0;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.cta-button {
-  display: inline-block;
-  padding: 12px 28px;
+.bonus-button {
   background-color: #ff4747;
   color: white;
-  font-weight: bold;
-  text-decoration: none;
+  padding: 12px 28px;
+  border: none;
   border-radius: 8px;
-  margin-bottom: 40px;
-  transition: transform 0.2s ease-in-out;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
 
-.cta-button:hover {
-  transform: scale(1.05);
+.bonus-button:hover {
+  background-color: #e03b3b;
 }
 
 .cases {
@@ -52,26 +51,21 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  margin-top: 20px;
 }
 
 .case {
   text-align: center;
-  color: white;
   text-decoration: none;
+  color: white;
   transition: transform 0.3s ease;
 }
 
 .case img {
-  width: 220px;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
+  width: 200px;
+  border-radius: 16px;
 }
 
-.case:hover img {
-  transform: scale(1.08);
-}
-
-.case p {
-  margin-top: 10px;
-  font-size: 16px;
+.case:hover {
+  transform: scale(1.05);
 }
