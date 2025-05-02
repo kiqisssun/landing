@@ -1,71 +1,72 @@
-
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background: url('assets/bg.jpg') no-repeat center center fixed;
   background-size: cover;
   color: white;
-}
-
-.main {
   text-align: center;
-  padding: 40px 20px;
 }
 
 .logo {
-  width: 280px;
-  margin-bottom: 20px;
+  max-width: 280px;
+  margin: 30px auto 10px;
+  display: block;
 }
 
-.subtitle {
-  font-size: 24px;
-  margin-bottom: 20px;
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
 }
 
-.bonus-block {
-  margin-bottom: 30px;
+.bonus {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
 }
 
-.bonus-text {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.bonus-button {
-  background-color: #ff4747;
+.cta-button {
+  background-color: #ff3c00;
   color: white;
-  padding: 12px 28px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 15px 35px;
+  font-size: 18px;
   text-decoration: none;
-  transition: background 0.3s ease;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 0 12px rgba(255, 60, 0, 0.5);
+  transition: background 0.2s ease;
+  margin-bottom: 40px;
 }
 
-.bonus-button:hover {
-  background-color: #e03b3b;
+.cta-button:hover {
+  background-color: #e13800;
 }
 
-.cases {
+.case-section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 20px;
+  padding: 30px 10px 60px;
 }
 
 .case {
-  text-align: center;
-  text-decoration: none;
-  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease;
-}
-
-.case img {
-  width: 200px;
-  border-radius: 16px;
+  max-width: 220px;
 }
 
 .case:hover {
   transform: scale(1.05);
+}
+
+.case img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.case-title {
+  margin-top: 10px;
+  font-weight: bold;
 }
