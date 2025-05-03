@@ -1,68 +1,101 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: url("assets/bg.jpg") no-repeat center center fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('assets/bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: white;
+  color: #fff;
   text-align: center;
 }
 
 .container {
-  background-color: rgba(0, 0, 0, 0.65);
-  min-height: 100vh;
   padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.1);
 }
 
 .logo {
-  width: 200px;
+  max-width: 300px;
   margin-bottom: 2rem;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
+.title {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
 }
 
-.case {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-  padding: 1rem;
-  width: 220px;
-  transition: transform 0.3s;
-}
-.case:hover {
-  transform: scale(1.05);
-}
-
-.case img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.case h2 {
-  margin: 1rem 0 0.5rem;
-}
-
-.case p {
-  margin: 0;
+.subtitle {
   font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffd700;
+}
+
+.promo-text {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.promo-text strong {
   color: #ffd700;
 }
 
-.cta {
-  display: inline-block;
-  margin-top: 3rem;
-  padding: 1rem 2rem;
-  background: #ff4c4c;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: background 0.3s;
+.case-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+  gap: 1.5rem;
 }
-.cta:hover {
-  background: #e03e3e;
+
+.case {
+  background-color: rgba(30, 30, 30, 0.8);
+  border-radius: 12px;
+  padding: 1rem;
+  width: 180px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.case:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffd700;
+}
+
+.case img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.case p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.case span {
+  color: #ffd700;
 }
