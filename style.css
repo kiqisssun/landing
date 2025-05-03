@@ -8,23 +8,30 @@ body {
 
 .container {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 220px;
   margin-bottom: 30px;
 }
 
 .headline {
   font-size: 32px;
-  margin: 10px 0 10px;
+  margin: 10px 0;
   font-weight: bold;
+  text-shadow: 1px 1px 4px #000;
 }
 
 .subheadline {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.cta-container {
+  text-align: center;
+  margin: 30px 0 60px;
 }
 
 .cta-button {
@@ -38,7 +45,6 @@ body {
   transition: background 0.2s ease;
   box-shadow: 0 0 14px rgba(255, 60, 0, 0.5);
   display: inline-block;
-  margin-bottom: 40px;
 }
 
 .cta-button:hover {
@@ -50,17 +56,19 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
-  padding: 40px 20px 60px;
+  padding: 20px 20px 0;
 }
 
 .case {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease;
   width: 260px;
   text-align: center;
   cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 
 .case:hover {
@@ -80,7 +88,7 @@ body {
 .case-title {
   padding: 14px;
   font-size: 18px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .wrapper {
